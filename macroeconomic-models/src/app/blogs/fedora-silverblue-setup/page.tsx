@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import TableOfContents from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
   title: 'Fedora Silverblue Setup Guide - Model Stack',
@@ -7,7 +8,9 @@ export const metadata: Metadata = {
 
 export default function FedoraGuide() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <>
+      <TableOfContents />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
           <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
@@ -223,6 +226,7 @@ tex --version`}</code>
           <span className="px-3 py-1 bg-gray-200 rounded-full text-sm text-gray-700">Academic Tools</span>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

@@ -13,6 +13,8 @@ export default function Navigation() {
     { name: 'Home', href: '/' },
     { name: 'Stacks', href: '/models' },
     { name: 'Blogs', href: '/blogs' },
+    { name: 'CV', href: '/cv' },
+    { name: 'Teaching', href: '/teaching' },
   ];
 
   return (

@@ -1,8 +1,11 @@
 import MathRenderer from '@/components/MathRenderer';
+import TableOfContents from '@/components/TableOfContents';
 
 export default function SolowModelPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <>
+      <TableOfContents />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Solow Growth Model</h1>
         <p className="text-xl text-gray-600">
@@ -100,6 +103,7 @@ export default function SolowModelPage() {
           <li>• The Golden Rule provides a welfare benchmark for optimal savings</li>
         </ul>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
