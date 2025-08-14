@@ -47,7 +47,7 @@ export default function TableOfContents() {
   if (headings.length === 0) return null;
 
   return (
-    <div className="hidden xl:block fixed top-32 right-8 w-64 bg-white border border-gray-200 rounded-lg p-4 shadow-sm max-h-96 overflow-y-auto">
+    <div className="hidden xl:block fixed top-32 left-8 w-64 bg-white border border-gray-200 rounded-lg p-4 shadow-sm max-h-96 overflow-y-auto">
       <h3 className="text-sm font-semibold text-gray-900 mb-3">Table of Contents</h3>
       <nav>
         <ul className="space-y-1">
