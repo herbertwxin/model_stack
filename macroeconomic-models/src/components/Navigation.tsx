@@ -11,16 +11,12 @@ export default function Navigation() {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Models', href: '/models' },
+    { name: 'Stacks', href: '/models' },
     { name: 'Blogs', href: '/blogs' },
   ];
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-      isHomepage 
-        ? 'bg-transparent border-transparent shadow-none' 
-        : 'bg-white border-b border-gray-200 shadow-sm'
-    }`}>
+    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm transition-all duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">

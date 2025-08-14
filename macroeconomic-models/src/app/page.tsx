@@ -3,25 +3,18 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-[80vh]">
-      {/* Hero Section */}
-      <section className="bg-white py-20 px-6 text-center">
+      {/* Personal Introduction Section */}
+      <section className="bg-white py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-4">
-            <h1 className="text-7xl font-black text-gray-900 mb-2 tracking-tight">
-              Model Stack
-            </h1>
-          </div>
-          <h2 className="text-4xl font-bold text-gray-700 mb-6">
-            Theoretical Macroeconomic Models
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            A comprehensive resource for understanding complex macroeconomic models through 
-            detailed mathematical derivations and economic insights.
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed text-left">
+            I am Herbert Xin, currently a PhD candidate in Economics at University of Oregon. 
+            This website also serves as a blog and repo for my personal project Model Stack, 
+            a directory for macroeconomics models.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4">
             <Link 
               href="/models" 
-              className="bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+              className="bg-gray-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors"
             >
               Explore Models
             </Link>
@@ -35,10 +28,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Research Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">Research</h2>
+          <p className="text-xl text-gray-700 leading-relaxed text-left">
+            My current research focuses on interaction between monetary and fiscal policy.
+          </p>
+        </div>
+      </section>
+
       {/* Popular Models Preview */}
       <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Popular Models</h2>
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-left">Model Stack</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               'IS-LM Model',
