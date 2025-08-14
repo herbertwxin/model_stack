@@ -31,7 +31,7 @@ export default function RootLayout({
         style={{ fontFamily: "'Monaspace Neon', 'Courier New', monospace" }}
       >
         <Navigation />
-        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main>
           {children}
         </main>
       </body>
