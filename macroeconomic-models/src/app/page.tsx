@@ -2,66 +2,138 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh]">
-      {/* Personal Introduction Section */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed text-left">
-            I am Herbert Xin, currently a PhD candidate in Economics at University of Oregon. 
-            This website also serves as a blog and repo for my personal project Model Stack, 
-            a directory for macroeconomics models.
-          </p>
-          <div className="flex gap-4">
-            <Link 
-              href="/models" 
-              className="bg-gray-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-700 transition-colors"
-            >
-              Explore Models
-            </Link>
-            <Link 
-              href="/blogs" 
-              className="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
-            >
-              Read Blogs
-            </Link>
-          </div>
-        </div>
-      </section>
+    <div className="min-h-[80vh] bg-white">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Column */}
+          <div className="space-y-8">
+            {/* Personal Introduction */}
+            <section>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                I am Herbert Xin, currently a PhD candidate in Economics at University of Oregon. 
+                This website also serves as a blog and repo for my personal project Model Stack, 
+                a directory for macroeconomics models.
+              </p>
+            </section>
 
-      {/* Research Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-left">Research</h2>
-          <p className="text-xl text-gray-700 leading-relaxed text-left">
-            My current research focuses on interaction between monetary and fiscal policy.
-          </p>
-        </div>
-      </section>
+            {/* Office Hour */}
+            <section className="bg-yellow-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Office Hour</h2>
+              <div className="text-gray-700">
+                <p className="font-medium">Location:</p>
+                <p>Prince Lucien Campbell Hall (PLC) 821</p>
+              </div>
+            </section>
 
-      {/* Popular Models Preview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-12 text-left">Model Stack</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              'IS-LM Model',
-              'Solow Growth Model', 
-              'Ramsey-Cass-Koopmans Model',
-              'Real Business Cycle Model'
-            ].map((model) => (
-              <div key={model} className="p-6 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-                <h3 className="font-semibold text-lg mb-2">{model}</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  Comprehensive mathematical treatment with economic insights.
-                </p>
-                <Link href="/models" className="text-gray-900 font-medium text-sm hover:underline">
-                  Learn More →
+            {/* Quick Links */}
+            <section className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Quick Access</h2>
+              <div className="space-y-3">
+                <Link 
+                  href="/cv" 
+                  className="block p-3 bg-white border border-gray-200 rounded-lg hover:shadow-sm transition-shadow"
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-gray-900">Curriculum Vitae</span>
+                    <span className="text-gray-500 text-sm">→</span>
+                  </div>
+                  <div className="text-sm text-gray-600 mt-1">Education, experience, and publications</div>
+                </Link>
+                
+                <Link 
+                  href="/teaching" 
+                  className="block p-3 bg-white border border-gray-200 rounded-lg hover:shadow-sm transition-shadow"
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-gray-900">Teaching</span>
+                    <span className="text-gray-500 text-sm">→</span>
+                  </div>
+                  <div className="text-sm text-gray-600 mt-1">Course materials and resources</div>
                 </Link>
               </div>
-            ))}
+            </section>
+
+            {/* Contact Info */}
+            <section className="bg-green-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact</h2>
+              <div className="space-y-2 text-sm">
+                <p className="text-gray-700">
+                  <span className="font-medium">Email:</span>{' '}
+                  <a href="mailto:hxin@uoregon.edu" className="text-gray-600 hover:text-gray-900">
+                    hxin@uoregon.edu
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-medium">LinkedIn:</span>{' '}
+                  <a 
+                    href="https://www.linkedin.com/in/herbert-xin-24170aa3/" 
+                    className="text-gray-600 hover:text-gray-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    herbert-xin
+                  </a>
+                </p>
+                <p className="text-gray-700">
+                  <span className="font-medium">Website:</span>{' '}
+                  <a 
+                    href="https://herbertwxin.github.io/" 
+                    className="text-gray-600 hover:text-gray-900"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    herbertwxin.github.io
+                  </a>
+                </p>
+              </div>
+            </section>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-8">
+            {/* Research Section */}
+            <section className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Research</h2>
+              <p className="text-gray-700 leading-relaxed">
+                My current research focuses on interaction between monetary and fiscal policy.
+              </p>
+            </section>
+
+            {/* Recent Publication */}
+            <section className="bg-blue-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Recent Publication</h2>
+              <div className="space-y-2">
+                <h3 className="font-semibold text-gray-900">The sacrifice ratio and active fiscal policy</h3>
+                <p className="text-sm text-gray-600">with Christopher G. Gibbs (The University of Sydney)</p>
+                <p className="text-sm text-gray-500">Economic Letters, 2024</p>
+              </div>
+            </section>
+
+            {/* Model Stack Preview */}
+            <section>
+              <h2 className="text-2xl font-bold mb-6 text-gray-900">Model Stack</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  'IS-LM Model',
+                  'Solow Growth Model', 
+                  'Ramsey-Cass-Koopmans Model',
+                  'Real Business Cycle Model'
+                ].map((model) => (
+                  <div key={model} className="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+                    <h3 className="font-semibold text-base mb-2">{model}</h3>
+                    <p className="text-gray-600 text-xs mb-3">
+                      Comprehensive mathematical treatment with economic insights.
+                    </p>
+                    <Link href="/models" className="text-gray-900 font-medium text-xs hover:underline">
+                      Learn More →
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </section>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
