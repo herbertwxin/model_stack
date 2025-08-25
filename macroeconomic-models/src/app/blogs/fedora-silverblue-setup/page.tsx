@@ -28,7 +28,7 @@ export default function FedoraGuide() {
 
       <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 space-y-8">
         <div className="prose prose-gray max-w-none space-y-6 [&>p]:leading-relaxed [&>p]:pl-4 [&>p]:mb-4">
-          <p>Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.</p>
+          <p>Feel free to contact me if you have any question with these instructions! Either through email or on the website&apos;s GitHub repository.</p>
           
           <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700 my-6">
             Many of the contents here are borrowed from <a href="https://mutschler.dev/linux/fedora-post-install/" className="text-blue-600 hover:underline">Willi Mutschler</a>. However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show its value.

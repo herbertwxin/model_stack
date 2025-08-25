@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import Link from 'next/link';
 
 interface SearchResult {
@@ -16,7 +16,7 @@ export default function SearchIcon() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const searchRef = useRef<HTMLDivElement>(null);
 
-  const searchData: SearchResult[] = [
+  const searchData: SearchResult[] = useMemo(() => [
     // Models
     { title: 'Solow Growth Model', type: 'model', href: '/models/solow', description: 'Neoclassical growth theory' },
     { title: 'IS-LM Model', type: 'model', href: '/models', description: 'Investment-Savings and Liquidity-Money equilibrium' },
@@ -37,7 +37,7 @@ export default function SearchIcon() {
     { title: 'DSGE', type: 'tag', href: '/models?tag=DSGE' },
     { title: 'Political', type: 'tag', href: '/blogs?category=Political' },
     { title: 'Guide', type: 'tag', href: '/blogs?category=Guide' },
-  ];
+  ], []);
 
   useEffect(() => {
     if (query.length > 0) {

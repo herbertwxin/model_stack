@@ -255,7 +255,7 @@ export default function CVPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Physician's Advice on Alcohol Consumption</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Physician&apos;s Advice on Alcohol Consumption</h3>
               <p className="text-gray-600 mb-2">UNSW, Sydney</p>
               <ul className="list-disc list-inside text-gray-700 ml-4">
                 <li>Given the data from the 1990 National Health Interview Survey core questionnaire and special supplements containing alcohol consumption, age, racial, and health data to estimate the effect of physician's advice on alcohol consumption</li>
