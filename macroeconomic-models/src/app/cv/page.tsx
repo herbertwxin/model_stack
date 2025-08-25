@@ -258,9 +258,9 @@ export default function CVPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Physician&apos;s Advice on Alcohol Consumption</h3>
               <p className="text-gray-600 mb-2">UNSW, Sydney</p>
               <ul className="list-disc list-inside text-gray-700 ml-4">
-                <li>Given the data from the 1990 National Health Interview Survey core questionnaire and special supplements containing alcohol consumption, age, racial, and health data to estimate the effect of physician's advice on alcohol consumption</li>
-                <li>Constructed CF-Tobit model to predict the effect of physician's advice, individual and socioeconomic factors on alcohol consumption using Stata</li>
-                <li>Estimated the result where physician's advice lowers alcohol consumption by 14.35 drinks on average, which suggests physician's advice could be a better policy than alcohol taxes, considering it is much cheaper to implement</li>
+                <li>Given the data from the 1990 National Health Interview Survey core questionnaire and special supplements containing alcohol consumption, age, racial, and health data to estimate the effect of physician&apos;s advice on alcohol consumption</li>
+                <li>Constructed CF-Tobit model to predict the effect of physician&apos;s advice, individual and socioeconomic factors on alcohol consumption using Stata</li>
+                <li>Estimated the result where physician&apos;s advice lowers alcohol consumption by 14.35 drinks on average, which suggests physician&apos;s advice could be a better policy than alcohol taxes, considering it is much cheaper to implement</li>
               </ul>
             </div>
           </div>

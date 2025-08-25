@@ -4,7 +4,9 @@ import { useEffect, useRef } from 'react';
 
 declare global {
   interface Window {
-    katex: any;
+    katex: {
+      render: (tex: string, element: HTMLElement, options: Record<string, unknown>) => void;
+    };
   }
 }
 
