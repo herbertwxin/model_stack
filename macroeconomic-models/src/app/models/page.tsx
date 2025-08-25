@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-interface ModelItem {
-  name: string;
-  description: string;
-  href?: string;
-  tags?: string[];
-}
+// interface ModelItem {
+//   name: string;
+//   description: string;
+//   href?: string;
+//   tags?: string[];
+// }
 
 export default function ModelsPage() {
   const [selectedTag, setSelectedTag] = useState("All");

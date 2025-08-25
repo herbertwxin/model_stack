@@ -210,7 +210,7 @@ export default function CVPage() {
               </div>
               <ul className="list-disc list-inside text-gray-700 ml-4">
                 <li>Winner of Industry Consulting Project Pitch Fest 2019</li>
-                <li>Given the requirement of the current client of Accenture in the telecommunication industry, helped the client to find a new business model to cater disruptive technologies</li>
+                <li>Given the requirement of the current client of Accenture in the telecommunication industry, helped the client to find a new business model to cater to disruptive technologies</li>
                 <li>Conducted broad background researches on the telecommunication industry and built a smart MU-MIMO antenna system, allowing the client to fully utilize the new business model</li>
                 <li>Analyzed and predicted the potential financial impact of the solution by utilizing data collected during researches and built data visualization for the presentation</li>
                 <li>Demonstrated great problem solving, data analysis, research, and communication skills during the project</li>
@@ -237,7 +237,7 @@ export default function CVPage() {
                     YouTube Channel
                   </a>
                 </li>
-                <li>Creating animated introductory macroeconomics courses with animation engine Manim (The engine used by 3B1B)</li>
+                <li>Creating animated introductory macroeconomics courses with animation engine Manim (The engine used by 3Blue1Brown)</li>
                 <li>The goal is to give students an intuitive way to understand macroeconomics with a set of animations showing the moving of lines and equilibriums</li>
                 <li>Written in Python and LaTeX</li>
               </ul>

@@ -2,12 +2,10 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
 import SearchIcon from './SearchIcon';
 
 export default function Navigation() {
   const pathname = usePathname();
-  const isHomepage = pathname === '/';
 
   const navItems = [
     { name: 'Home', href: '/' },

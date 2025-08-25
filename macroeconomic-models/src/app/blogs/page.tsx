@@ -3,14 +3,14 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-interface BlogPost {
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  category: string;
-  href?: string;
-}
+// interface BlogPost {
+//   title: string;
+//   excerpt: string;
+//   date: string;
+//   readTime: string;
+//   category: string;
+//   href?: string;
+// }
 
 export default function BlogsPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");

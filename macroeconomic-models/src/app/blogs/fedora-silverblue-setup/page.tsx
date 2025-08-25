@@ -31,10 +31,10 @@ export default function FedoraGuide() {
           <p>Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.</p>
           
           <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-700 my-6">
-            Many of the contents here are borrowed from <a href="https://mutschler.dev/linux/fedora-post-install/" className="text-blue-600 hover:underline">Willi Mutschler</a>. However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show it's value.
+            Many of the contents here are borrowed from <a href="https://mutschler.dev/linux/fedora-post-install/" className="text-blue-600 hover:underline">Willi Mutschler</a>. However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show its value.
           </blockquote>
 
-          <p>The version used is Fedora Silverblue 39 at the time this post is written. Most of the softwares are probably more personal and economists-oriented.</p>
+          <p>The version used is Fedora Silverblue 39 at the time this post is written. Most of the software is probably more personal and economists-oriented.</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Background Info for Silverblue</h2>
           

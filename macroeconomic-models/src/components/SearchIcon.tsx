@@ -49,7 +49,7 @@ export default function SearchIcon() {
     } else {
       setResults([]);
     }
-  }, [query]);
+  }, [query, searchData]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -136,7 +136,7 @@ export default function SearchIcon() {
               </div>
             ) : query.length > 0 ? (
               <div className="p-4 text-center text-gray-500 text-sm">
-                No results found for "{query}"
+                No results found for &ldquo;{query}&rdquo;
               </div>
             ) : (
               <div className="p-4 text-center text-gray-500 text-sm">

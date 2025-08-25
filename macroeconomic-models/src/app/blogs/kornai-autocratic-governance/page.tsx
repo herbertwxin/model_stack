@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import TableOfContents from '@/components/TableOfContents';
 
 export const metadata: Metadata = {
@@ -31,9 +32,9 @@ export default function KornaiComment() {
           
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Introduction</h2>
           
-          <p>After randomly came across Kornai's work on <em>"Resource-Constrained versus Demand-Constrained System" (1979)</em>, I realized it idea of soft/hard budget constraint displays a very neat framework to explain why autocratic government, especially the local government, often deviates from the demand of populace.</p>
+          <p>After randomly came across Kornai&apos;s work on <em>&ldquo;Resource-Constrained versus Demand-Constrained System&rdquo; (1979)</em>, I realized it idea of soft/hard budget constraint displays a very neat framework to explain why autocratic government, especially the local government, often deviates from the demand of populace.</p>
 
-          <p>In Kornai's work, he suggests that firms in socialist systems are only subject to soft budget constraints, i.e. the loss from investment does not damage the financial ability of the firm as it is owned by the state. Whereas in capitalist system, firms are immediately constrained by demands from the market, avoiding overly occupying social resources. In all circumstances, however, firms prioritize the most immediate constraint as it decides the survival of the firm. Thus, socialist firms suffer from "investment hunger", which relentlessly push for expansion regardless of actual market demands or the efficient use of resources to maintain state support till the exhaustion of resources, creating shortages.</p>
+          <p>In Kornai&apos;s work, he suggests that firms in socialist systems are only subject to soft budget constraints, i.e. the loss from investment does not damage the financial ability of the firm as it is owned by the state. Whereas in capitalist system, firms are immediately constrained by demands from the market, avoiding overly occupying social resources. In all circumstances, however, firms prioritize the most immediate constraint as it decides the survival of the firm. Thus, socialist firms suffer from &ldquo;investment hunger&rdquo;, which relentlessly push for expansion regardless of actual market demands or the efficient use of resources to maintain state support till the exhaustion of resources, creating shortages.</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">A Political Perspective</h2>
           
@@ -41,23 +42,26 @@ export default function KornaiComment() {
 
           <p>As the nature of all autocratic system, local government officials are appointed by its superior, which means their responsibilities lies in achieving need of the superior. That need, however, does not necessary align with those from the residents. Put it into Karnai's framework, local government in autocratic state is delimited by the by its interaction with superior, while in democratic state, it is delimited by the interaction with local resident. This is an analogous of the resource/demand constraint faced by socialist/capitalist firms. Thus, just like socialist firms have no incentive to save resources, autocratic local governments have no incentive to benefit its residents.</p>
 
-          <p>This lack of incentive occurs even when the central government's ultimate goal is to benefit the populace, as any policy relies on local government's implementation. With its hard constraint bounded by the populace, local government has to achieve the policy in a way that is generally agreed by the resident, where autocratic local governments, who's hard constraint is bounded by the central government, the policy can executed in any form, as long as it achieves the target.</p>
+          <p>This lack of incentive occurs even when the central government&apos;s ultimate goal is to benefit the populace, as any policy relies on local government&apos;s implementation. With its hard constraint bounded by the populace, local government has to achieve the policy in a way that is generally agreed by the resident, where autocratic local governments, who&apos;s hard constraint is bounded by the central government, the policy can executed in any form, as long as it achieves the target.</p>
 
           <p>The aforementioned idea could be illustrated using my <strong>mushroom-shaped flowchart</strong>.</p>
 
           <div className="my-8 text-center">
-            <img 
-              src="/img/Mushroom.png" 
-              alt="Mushroom Flowchart showing relationship between central government, local government, and populace" 
-              className="max-w-full h-auto mx-auto rounded-lg shadow-sm"
-              style={{ maxWidth: "70%" }}
-            />
+            <div className="mx-auto" style={{ maxWidth: "70%" }}>
+              <Image 
+                src="/img/Mushroom.png" 
+                alt="Mushroom Flowchart showing relationship between central government, local government, and populace" 
+                width={500}
+                height={400}
+                className="max-w-full h-auto mx-auto rounded-lg shadow-sm"
+              />
+            </div>
             <p className="text-sm text-gray-500 mt-2 italic">Mushroom-shaped flowchart illustrating autocratic governance structure</p>
           </div>
 
           <p>As one could see from the chart, the local government has the ruling power towards the people, while its primary responsibility is not tied with the needs of people. Local government only has a secondary responsibility towards the populace, i.e. the people influence the central government, which governs the local government.</p>
 
-          <p>Such detachment between local government's responsibility and power has caused issues like the overly stringent lock-down policy during the COVID-19 era in China. The ultimate goal of the central government is to reduce the number of cases, which is certainly not wrong. However, since local government has no incentive to benefit its people, especially during such urgent event, it takes every measure at any cost to eliminate any possibility of COVID spreading, which, of course, includes killing dogs during break-in home COVID tests and leaving people that are suspect to be infected in Fangcang Hospital without any actual treatment. These measures obviously harms the welfare of general public and it does not matter as local government's primary responsibility, the one that decides the political career of local governor, is to fulfill the goal of the superior.</p>
+          <p>Such detachment between local government&apos;s responsibility and power has caused issues like the overly stringent lock-down policy during the COVID-19 era in China. The ultimate goal of the central government is to reduce the number of cases, which is certainly not wrong. However, since local government has no incentive to benefit its people, especially during such urgent event, it takes every measure at any cost to eliminate any possibility of COVID spreading, which, of course, includes killing dogs during break-in home COVID tests and leaving people that are suspect to be infected in Fangcang Hospital without any actual treatment. These measures obviously harms the welfare of general public and it does not matter as local government&apos;s primary responsibility, the one that decides the political career of local governor, is to fulfill the goal of the superior.</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Conclusion</h2>
           
