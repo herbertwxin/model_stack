@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Scale Responsive Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', Georgia, serif;
+        }
+        .viewport-indicator {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="viewport-indicator" id="viewportIndicator">
+        Viewport: <span id="viewportSize"></span>
+    </div>
+
+    <div class="min-h-screen bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <h1 class="text-2xl font-bold mb-8 text-center text-gray-900">Homepage Font Scale Test</h1>
+            
+            <!-- Replicate the actual homepage structure -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <!-- Personal Introduction -->
+                    <section>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            I am Herbert Xin, currently a PhD candidate in Economics at University of Oregon. 
+                            This website also serves as a blog and repo for my personal project Model Stack, 
+                            a directory for macroeconomics models.
+                        </p>
+                    </section>
+
+                    <!-- Office Hour -->
+                    <section class="bg-yellow-50 p-6 rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Office Hour</h2>
+                        <div class="text-gray-700">
+                            <p class="text-sm text-gray-600 font-medium">Location:</p>
+                            <p class="text-base">Prince Lucien Campbell Hall (PLC) 821</p>
+                        </div>
+                    </section>
+
+                    <!-- Quick Links -->
+                    <section class="bg-gray-50 p-6 rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Quick Access</h2>
+                        <div class="space-y-3">
+                            <div class="block p-3 bg-white border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-base font-medium text-gray-900">Curriculum Vitae</span>
+                                    <span class="text-xs text-gray-500">→</span>
+                                </div>
+                                <div class="text-sm text-gray-600 mt-1">Education, experience, and publications</div>
+                            </div>
+                            
+                            <div class="block p-3 bg-white border border-gray-200 rounded-lg hover:shadow-sm transition-shadow">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-base font-medium text-gray-900">Teaching</span>
+                                    <span class="text-xs text-gray-500">→</span>
+                                </div>
+                                <div class="text-sm text-gray-600 mt-1">Course materials and resources</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Info -->
+                    <section class="bg-green-50 p-6 rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Contact</h2>
+                        <div class="space-y-2">
+                            <p>
+                                <span class="text-sm text-gray-600 font-medium">Email:</span>
+                                <span class="text-sm font-medium text-gray-600 hover:text-gray-900">hxin@uoregon.edu</span>
+                            </p>
+                            <p>
+                                <span class="text-sm text-gray-600 font-medium">LinkedIn:</span>
+                                <span class="text-sm font-medium text-gray-600 hover:text-gray-900">herbert-xin</span>
+                            </p>
+                            <p>
+                                <span class="text-sm text-gray-600 font-medium">Website:</span>
+                                <span class="text-sm font-medium text-gray-600 hover:text-gray-900">herbertwxin.github.io</span>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-8">
+                    <!-- Research Section -->
+                    <section class="bg-gray-50 p-6 rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Research</h2>
+                        <p class="text-base text-gray-700 leading-relaxed">
+                            My current research focuses on interaction between monetary and fiscal policy.
+                        </p>
+                    </section>
+
+                    <!-- Recent Publication -->
+                    <section class="bg-blue-50 p-6 rounded-lg">
+                        <h2 class="text-xl font-semibold text-gray-900 mb-4">Recent Publication</h2>
+                        <div class="space-y-2">
+                            <h3 class="font-semibold text-gray-900">The sacrifice ratio and active fiscal policy</h3>
+                            <p class="text-sm text-gray-600">with Christopher G. Gibbs (The University of Sydney)</p>
+                            <p class="text-xs text-gray-500">Economic Letters, 2024</p>
+                        </div>
+                    </section>
+
+                    <!-- Model Stack Preview -->
+                    <section>
+                        <h2 class="text-xl font-semibold mb-6 text-gray-900">Model Stack</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+                                <h3 class="font-semibold text-base mb-2">IS-LM Model</h3>
+                                <p class="text-sm text-gray-600 mb-3">
+                                    Comprehensive mathematical treatment with economic insights.
+                                </p>
+                                <div class="text-sm font-medium text-gray-900 hover:underline">
+                                    Learn More <span class="text-xs text-gray-500">→</span>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+                                <h3 class="font-semibold text-base mb-2">Solow Growth Model</h3>
+                                <p class="text-sm text-gray-600 mb-3">
+                                    Comprehensive mathematical treatment with economic insights.
+                                </p>
+                                <div class="text-sm font-medium text-gray-900 hover:underline">
+                                    Learn More <span class="text-xs text-gray-500">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Test Results Section -->
+            <div class="mt-16 p-6 bg-gray-100 rounded-lg">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Responsive Test Results</h2>
+                <div class="space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="font-semibold mb-2">Font Size Hierarchy:</h3>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Section Headers: text-xl (20px)</li>
+                                <li>• Body Text: text-base (16px)</li>
+                                <li>• Metadata: text-sm (14px)</li>
+                                <li>• Micro Text: text-xs (12px)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Responsive Behavior:</h3>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Grid: 2 columns on lg+ screens</li>
+                                <li>• Model cards: 2 columns on sm+ screens</li>
+                                <li>• All text maintains proportional scaling</li>
+                                <li>• Visual hierarchy preserved across breakpoints</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateViewportIndicator() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            let size = '';
+            
+            if (width < 640) size = 'Mobile (< 640px)';
+            else if (width < 768) size = 'Small Tablet (640-767px)';
+            else if (width < 1024) size = 'Tablet (768-1023px)';
+            else if (width < 1280) size = 'Desktop (1024-1279px)';
+            else size = 'Large Desktop (≥ 1280px)';
+            
+            document.getElementById('viewportSize').textContent = `${size} - ${width}×${height}`;
+        }
+
+        updateViewportIndicator();
+        window.addEventListener('resize', updateViewportIndicator);
+    </script>
+</body>
+</html>
